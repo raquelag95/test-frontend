@@ -1,0 +1,21 @@
+<!-- Tarjetas -->
+<ng-container *ngFor="let item of cardData">
+  <ui-card
+    [data]="item">
+  </ui-card>
+</ng-container>
+
+<!-- Contenedor que bloquea la pantalla si hay error -->
+<div class="containerError"></div>
+
+<!-- Modal de error -->
+<div class="modalError" *ngIf="displayModalError">
+  <div class="header">
+    <i class="fa fa-times" aria-hidden="true" (click)="displayModalError = false"></i>
+  </div>
+  <div class="text">
+    <p>
+      Ha ocurrido un error al cargar los datos.
+    </p>
+  </div>
+</div>

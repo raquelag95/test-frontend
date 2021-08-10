@@ -1,0 +1,47 @@
+/* Estilo del contenedor principal */
+#containerButton {
+    border-radius: 4px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 20px;
+    cursor: pointer;
+    color: snow;
+}
+
+/* Colores background */
+#containerButton.blue {
+    background: linear-gradient(180deg, rgb(60, 182, 219) 0%, rgb(117, 194, 218) 100%);
+}
+#containerButton.blue:hover {
+    background: linear-gradient(180deg, rgb(117, 194, 218) 0%, rgb(165, 205, 218) 100%);
+}
+#containerButton.green {
+    background: linear-gradient(180deg, rgb(30, 212, 85) 0%, rgb(116, 212, 145) 100%);
+}
+#containerButton.green:hover {
+    background: linear-gradient(180deg, rgb(116, 212, 145) 0%rgb(185, 214, 194) 100%);
+}
+#containerButton.orange {
+    background: linear-gradient(180deg, orange 0%, rgb(226, 194, 133) 100%);
+}
+#containerButton.orange:hover {
+    background: linear-gradient(180deg, rgb(226, 194, 133) 0%, rgb(219, 206, 182) 100%);
+}
+#containerButton.transparent {
+    background: transparent;
+    color: slateblue;
+    font-weight: bold;
+}
+#containerButton.transparent:hover {
+    text-decoration-line: underline;
+    text-decoration-style: wavy;
+}
+
+
+/*Estilos botón deshabilitado*/
+#containerButton.disabled {
+    pointer-events: none;
+    background: rgba(218, 219, 216, 0.507);
+    color: grey;
+}

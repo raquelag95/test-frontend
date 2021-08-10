@@ -1,0 +1,35 @@
+/*dimensiones contenedor body*/
+#body {    
+    height: 100vh;
+    display: table-cell;
+}
+/*estilos contenedor menu*/
+#menu {
+    height: 100%;
+    width: 350px;
+    float: left;
+    background-color: #617c97;
+}
+#menu div.category-section {
+    margin: 0 auto;
+    width: 250px;
+    padding: 45px 30px 25px 30px;
+    margin-top: 200px;
+}
+#menu div.category-section span{
+    font-family: Neo Sans Regular, Arial, Helvetica, sans-serif;
+    font-size: 18px;
+}
+/*dimensiones botones*/
+#menu div.category-section .btn-class {
+    width: 250px;
+    height: 55px;
+}
+/*estilos contenedor content*/
+#content {
+    height: 100%;
+    width: calc(100vw - 350px);
+    margin-left: 350px;   
+    background-color: #E4E8EB; 
+}
+

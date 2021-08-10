@@ -1,0 +1,19 @@
+<div id="body">
+  <!-- Menú de navegación izquierdo -->
+  <div id="menu">
+
+    <!-- Categorías -->
+    <div class="category-section">
+      <ng-container *ngFor="let button of arrButtons">
+        <ui-button [color]="button.color" (onClick)="navitage(button.id)">
+          <span>{{button.title}}</span>
+        </ui-button>
+      </ng-container>
+    </div>
+
+  </div>
+  <!-- Contenido principal -->
+  <div id="content">
+    <router-outlet></router-outlet>
+  </div>
+</div>

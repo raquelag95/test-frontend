@@ -1,0 +1,18 @@
+<!-- Contenedor princiapl de la tarjeta -->
+<div id="containerCard">
+  <!-- Título y subtítulo -->
+  <div class="info-section">
+    <h3>{{data.title}}</h3>
+    <hr>
+    <p>{{data.subtitle | titlecase}}</p>
+  </div>
+  <br>
+  <!-- Botonera -->
+  <div class="btn-section">
+    <ng-container *ngFor="let btn of data.arrButton">
+      <ui-button [color]="btn.color">
+        <span>{{btn.title}}</span>
+      </ui-button>
+    </ng-container>
+  </div>
+</div>
